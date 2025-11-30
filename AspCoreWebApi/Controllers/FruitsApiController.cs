@@ -21,6 +21,12 @@ namespace AspCoreWebApi.Controllers
             return fruits;
 
         }
+        [HttpGet("{id}")]
+        public string GetFruitsByIndex(int id)
+        {
+            return fruits.ElementAt(id);
+
+        }
     }
 
    
